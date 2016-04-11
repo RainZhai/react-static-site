@@ -16,8 +16,8 @@ webpack(config[1], function(err, stats) {
     
     var assets = 'public/assets';
     mkdirp.sync(assets);
-    fs.writeFileSync(assets + '/pure.css', fs.readFileSync('bower_components/pure/pure.css'));
-    fs.writeFileSync(assets + '/style.css', fs.readFileSync('elements/style.css'));
+    fs.writeFileSync(assets + '/screen.css', fs.readFileSync('elements/blueprint/screen.css'));
+    fs.writeFileSync(assets + '/rain.css', fs.readFileSync('elements/rain.css'));
     
     for(var path in paths.allPaths()) {
       if(path!=='posts') {

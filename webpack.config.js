@@ -11,7 +11,7 @@ var resolveCommon = {
 var moduleCommon = {
   loaders: [
     // Pass *.css files through css-loader and style-loader transforms
-    { test: /\.css$/, loader: 'style!css' },
+    { test: /\.css$/, loader: 'style-loader!css-loader' },
     // Pass *.jsx files through jsx-loader transform
     { test: /\.jsx$/, loaders: ['react-hot', 'jsx'] },
     { test: /\.html$/, loader: 'raw' },
