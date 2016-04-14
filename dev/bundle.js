@@ -32975,8 +32975,8 @@
 
 	  render: function() {
 	    var script = (process.env.NODE_ENV!=='production') ? React.createElement("script", {src: "http://localhost:3000/scripts/bundle.js"}) : '';
-	    var style = (process.env.NODE_ENV==='production') ? React.createElement("link", {rel: "stylesheet", href: "/assets/pure.css"}) : '';
-	    var style2 = (process.env.NODE_ENV==='production') ? React.createElement("link", {rel: "stylesheet", href: "/assets/style.css"}) : '';
+	    var style = (process.env.NODE_ENV==='production') ? React.createElement("link", {rel: "stylesheet", href: "assets/screen.css"}) : '';
+	    var style2 = (process.env.NODE_ENV==='production') ? React.createElement("link", {rel: "stylesheet", href: "assets/rain.css"}) : '';
 
 	    var title = this.getPathMeta('title') + ' - React Static Site';
 	    return (
