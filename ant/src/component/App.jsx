@@ -3,6 +3,7 @@ import { DatePicker, message } from 'antd';
 import Header from './Header'; 
 import MainSlide from './MainSlide'; 
 import Sidebar from './Sidebar'; 
+import ServiceList from './ServiceList'; 
 
 import './main.css';
 
@@ -23,6 +24,9 @@ const App = React.createClass({
       <Header />
       <MainSlide className="pt-8" />
       <div className="container pt clearfix">
+          <div className="main posr left bgw">
+            <ServiceList />
+          </div>
           <Sidebar/>
       </div>
       <DatePicker onChange={this.handleChange} />
